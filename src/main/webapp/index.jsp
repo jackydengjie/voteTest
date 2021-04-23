@@ -55,48 +55,7 @@
             width: auto;
         }
     </style>
-    <script>
-        function checkDirector1() {
-            var directorname1 = $("#directorname1").val();
-            if(directorname1!=null){
-                return true;
-            }else {
-                return false;
-            }
-        }
-        /* function checkDirector2() {
-             var directorname1 = $("#directorname1").val();
-             if(directorname1!=null){
-                 return true;
-             }else {
-                 return false;
-             }
-             function checkDirector3() {
-                 var directorname1 = $("#directorname1").val();
-                 if(directorname1!=null){
-                     return true;
-                 }else {
-                     return false;
-                 }
-             }
-         }*/
-        $(function () {
-            $("#registerForm").submit(function(){
-                if(checkDirector1()!=null/* && checkDirector2() && checkDirector3()*/){
-                    $.post("registUserServlet".$(this).serialize(),function(data){
 
-                    })
-                }
-
-                return false;
-            })
-            $("#directorname1").blur(checkDirector1);
-            /*   $("#directorname2").blur(checkDirector2);
-               $("#directorname3").blur(checkDirector3);*/
-        })
-
-
-    </script>
 
 </head>
 <body>
@@ -132,9 +91,9 @@
                 </td>
             </tr>
         </table>
-    </form>
 
-    <form id="registerForm2" action="user">
+
+
         <div class="question-title">Q2：优秀员工（1人三票，请统一填英文名）</div>
         <input type="hidden" name="action" value="register">
         <table style="margin-top: 25px;">
@@ -163,9 +122,9 @@
                 </td>
             </tr>
         </table>
-    </form>
 
-    <form id="registerForm3" action="user">
+
+
         <div class="question-title">Q3：敬业之星（1人六票，请统一填英文名）</div>
         <input type="hidden" name="action" value="register">
         <table style="margin-top: 25px;">
@@ -218,7 +177,6 @@
                 </td>
             </tr>
         </table>
-    </form>
 
     <div class="question-content">
         <div class="question-title">Q4：优秀团队（1人三票）</div>
@@ -263,6 +221,8 @@
             </div>
         </div>
     </div>
+    </form>
+
 </div>
 
 </div>
