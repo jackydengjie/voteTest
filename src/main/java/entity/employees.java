@@ -5,7 +5,9 @@ package entity;
 
  */
 
-public class employees {
+import java.io.Serializable;
+  /*实现序列化接口*/
+public class employees implements Serializable {
     public String uname;
     public int piaoshu;
 
