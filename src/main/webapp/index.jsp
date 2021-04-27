@@ -62,7 +62,7 @@
 <div class="project-content" >
     <div class="answer-title">KINGSUN2020年度奖项评选投票</div>
 
-    <form id="registerForm" action="user">
+    <form action="${pageContext.request.contextPath}//toSavePs",method="post">
         <div class="question-title">Q1：优秀主管（1人三票，请统一填英文名）</div>
         <input type="hidden" name="action" value="register">
         <table style="margin-top: 25px;">
@@ -71,7 +71,7 @@
                     <label for="username"> （1）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text" id="directorname1" name="username" class="form-control" placeholder="请输入优秀主管英文名" >
+                    <input type="text" id="employees1" name="username" class="form-control" placeholder="请输入优秀主管英文名" >
                 </td>
             </tr>
             <tr>
@@ -79,7 +79,7 @@
                     <label for="username"> （2）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text" id="directorname2" name="username" class="form-control" placeholder="请输入优秀主管英文名" >
+                    <input type="text" id="employees2" name="username" class="form-control" placeholder="请输入优秀主管英文名" >
                 </td>
             </tr>
             <tr>
@@ -87,7 +87,7 @@
                     <label for="username"> （3）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text" id="directorname3" name="username" class="form-control" placeholder="请输入优秀主管英文名" >
+                    <input type="text" id="employees3" name="username" class="form-control" placeholder="请输入优秀主管英文名" >
                 </td>
             </tr>
         </table>
@@ -102,7 +102,7 @@
                     <label for="username"> （1）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text" id="username" name="username" class="form-control" placeholder="请输入优秀员工英文名" >
+                    <input type="text" id="supervisor1" name="username" class="form-control" placeholder="请输入优秀员工英文名" >
                 </td>
             </tr>
             <tr>
@@ -110,7 +110,7 @@
                     <label for="username"> （2）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text" id="username" name="username" class="form-control" placeholder="请输入优秀员工英文名" >
+                    <input type="text" id="supervisor2" name="username" class="form-control" placeholder="请输入优秀员工英文名" >
                 </td>
             </tr>
             <tr>
@@ -118,7 +118,7 @@
                     <label for="username"> （3）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text" id="username" name="username" class="form-control" placeholder="请输入优秀员工英文名" >
+                    <input type="text" id="supervisor3" name="username" class="form-control" placeholder="请输入优秀员工英文名" >
                 </td>
             </tr>
         </table>
@@ -133,7 +133,7 @@
                     <label for="username"> （1）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text" id="username" name="username" class="form-control" placeholder="请输入敬业之星英文名" >
+                    <input type="text" id="professional1" name="username" class="form-control" placeholder="请输入敬业之星英文名" >
                 </td>
             </tr>
             <tr>
@@ -141,7 +141,7 @@
                     <label for="username"> （2）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text" id="username" name="username" class="form-control" placeholder="请输入敬业之星英文名" >
+                    <input type="text" id="professional2" name="username" class="form-control" placeholder="请输入敬业之星英文名" >
                 </td>
             </tr>
             <tr>
@@ -149,7 +149,7 @@
                     <label for="username"> （3）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text" id="username" name="username" class="form-control" placeholder="请输入敬业之星英文名" >
+                    <input type="text" id="professional3" name="username" class="form-control" placeholder="请输入敬业之星英文名" >
                 </td>
             </tr>
             <tr>
@@ -157,7 +157,7 @@
                     <label for="username"> （4）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text" id="username" name="username" class="form-control" placeholder="请输入敬业之星英文名" >
+                    <input type="text" id="professional4" name="username" class="form-control" placeholder="请输入敬业之星英文名" >
                 </td>
             </tr>
             <tr>
@@ -165,7 +165,7 @@
                     <label for="username"> （5）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text" id="username" name="username" class="form-control" placeholder="请输入敬业之星英文名" >
+                    <input type="text" id="professional5" name="username" class="form-control" placeholder="请输入敬业之星英文名" >
                 </td>
             </tr>
             <tr>
@@ -173,7 +173,7 @@
                     <label for="username"> （6）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text" id="username" name="username" class="form-control" placeholder="请输入敬业之星英文名" >
+                    <input type="text" id="professional6" name="username" class="form-control" placeholder="请输入敬业之星英文名" >
                 </td>
             </tr>
         </table>

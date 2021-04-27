@@ -1,5 +1,6 @@
 package controller;
 
+import entity.Toupiao;
 import entity.employees;
 import entity.professional;
 import org.springframework.stereotype.Controller;
@@ -15,13 +16,20 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class ToupiaoController {
 
-    @Resource
-    private ToupiaoService  toupiaoService;
+
 
     @RequestMapping(value = "/toSavePs",method = RequestMethod.POST)
-    public String savePs(@RequestBody employees employees, @RequestBody professional professional, HttpServletRequest request){
-        System.out.println("employees的值是："+employees);
-        System.out.println("professional的值是："+professional);
+    public String savePs(Toupiao toupiao, HttpServletRequest request){
+        System.out.println("savePs方法开始执行！！！！");
+        System.out.println(toupiao.getEmployees1());
+        System.out.println(toupiao.getEmployees2());
+        System.out.println(toupiao.getEmployees3());
+        System.out.println(toupiao.getProfessional1());
+        System.out.println(toupiao.getProfessional2());
+        System.out.println(toupiao.getProfessional3());
+
+
+
         return "toSavePs";
     }
 
