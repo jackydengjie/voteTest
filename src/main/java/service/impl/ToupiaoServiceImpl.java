@@ -1,18 +1,21 @@
 package service.impl;
 
-import entity.employees;
-import entity.professional;
+import entity.Toupiao;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.ResponseBody;
 import service.ToupiaoService;
 
+@Service
 public class ToupiaoServiceImpl implements ToupiaoService {
 
 
     @Override
-    public int savePs(employees employees1, employees employees2, employees employees3, professional professional1,
-                      professional professional2, professional professional3) {
+    @ResponseBody
+    public String savePs(Toupiao toupiao) {
         System.out.println("ToupiaoServiceImpl方法执行了！");
+        System.out.println(toupiao);
 
 
-        return 0;
+        return null;
     }
 }

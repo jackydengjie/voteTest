@@ -7,6 +7,7 @@ public class Toupiao {
     private String professional1;
     private String professional2;
     private String professional3;
+    private team team;
 
     public String getEmployees1() {
         return employees1;
@@ -56,6 +57,14 @@ public class Toupiao {
         this.professional3 = professional3;
     }
 
+    public entity.team getTeam() {
+        return team;
+    }
+
+    public void setTeam(entity.team team) {
+        this.team = team;
+    }
+
     @Override
     public String toString() {
         return "Toupiao{" +
@@ -65,6 +74,7 @@ public class Toupiao {
                 ", professional1='" + professional1 + '\'' +
                 ", professional2='" + professional2 + '\'' +
                 ", professional3='" + professional3 + '\'' +
+                ", team=" + team +
                 '}';
     }
 }

@@ -1,11 +1,10 @@
 package service;
 
-import entity.employees;
-import entity.professional;
+import entity.Toupiao;
+
 
 public interface ToupiaoService {
 
     //新增投票人
-    public int savePs(employees employees1, employees employees2, employees employees3, professional professional1,
-                      professional professional2, professional professional3);
+    public String savePs(Toupiao toupiao);
 }

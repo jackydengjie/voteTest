@@ -33,7 +33,7 @@
     <tr><td><input type="submit"   value="提交" /></td></tr>
 </form>
 
-<form action="${pageContext.request.contextPath}/toSavePs" method="post">
+<form action="${pageContext.request.contextPath}/getUser" method="post">
     <tr><td><input type="text"  name="employees1"  value="1" /></td></tr>
     <tr><td><input type="text"  name="employees2"  value="2" /></td></tr>
     <tr><td><input type="text"  name="employees3"  value="3" /></td></tr>
@@ -41,6 +41,22 @@
     <tr><td><input type="text"  name="professional1"  value="4" /></td></tr>
     <tr><td><input type="text"  name="professional2"  value="5" /></td></tr>
     <tr><td><input type="text"  name="professional3"  value="6" /></td></tr>
+    <div class="question-content">
+        <div class="question-title">Q4：优秀团队（1人三票）</div>
+        <div class="question-option">
+            <div id='qwe' class='matrix'>
+                <div class="icheckbox_div">
+                    <span><input type="checkbox" value="FinancialAffairs" id="checkbox1" name="type"><lable> Financial Affairs </lable></span>
+                </div>
+                <div class="icheckbox_div">
+                    <span><input type="checkbox" value="AHR" id="checkbox2" name="type"><lable> AHR </lable></span>
+                </div>
+                <div class="icheckbox_div">
+                    <span><input type="checkbox" value="SALES 1" id="checkbox3" name="type"><lable> SALES 1 </lable></span>
+                </div>
+            </div>
+        </div>
+    </div>
     <tr><td><input type="submit"  id="regist" value="提交" /></td></tr>
 </form>
 

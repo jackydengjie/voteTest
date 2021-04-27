@@ -16,21 +16,22 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class ToupiaoController {
 
+    @Resource
+    private ToupiaoService toupiaoService;
 
-
-    @RequestMapping(value = "/toSavePs",method = RequestMethod.POST)
+    @RequestMapping(path = "/getUser",method = RequestMethod.POST)
+    @ResponseBody
     public String savePs(Toupiao toupiao, HttpServletRequest request){
         System.out.println("savePs方法开始执行！！！！");
-        System.out.println(toupiao.getEmployees1());
-        System.out.println(toupiao.getEmployees2());
-        System.out.println(toupiao.getEmployees3());
-        System.out.println(toupiao.getProfessional1());
-        System.out.println(toupiao.getProfessional2());
-        System.out.println(toupiao.getProfessional3());
+        System.out.println(toupiao);
+        String[] shuigou=request.getParameterValues("type");
+        System.out.println(shuigou);
+        for (int i = 0; i < shuigou.length; i++) {
+            String shuiguoname=shuigou[i];
+            System.out.println(shuiguoname);
+        }
 
-
-
-        return "toSavePs";
+        return toupiaoService.savePs(toupiao);
     }
 
 }
