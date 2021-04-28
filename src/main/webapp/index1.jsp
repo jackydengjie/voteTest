@@ -33,7 +33,7 @@
     <tr><td><input type="submit"   value="提交" /></td></tr>
 </form>
 
-<form action="${pageContext.request.contextPath}/getUser" method="post">
+<form action="${pageContext.request.contextPath}/toSavePs" method="post">
     <tr><td><input type="text"  name="employees1"  value="1" /></td></tr>
     <tr><td><input type="text"  name="employees2"  value="2" /></td></tr>
     <tr><td><input type="text"  name="employees3"  value="3" /></td></tr>
@@ -45,6 +45,8 @@
         <div class="question-title">Q4：优秀团队（1人三票）</div>
         <div class="question-option">
             <div id='qwe' class='matrix'>
+                <%--后台request读取的数组类型是读取name便type不能更改应该是与前面的type类型相对应的，value是读取后的的数值如果input里
+                    没有value后到读到的全部是0--%>
                 <div class="icheckbox_div">
                     <span><input type="checkbox" value="FinancialAffairs" id="checkbox1" name="type"><lable> Financial Affairs </lable></span>
                 </div>

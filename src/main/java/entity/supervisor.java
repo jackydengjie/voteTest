@@ -4,8 +4,8 @@ package entity;
  */
 
 public class supervisor {
-    public String uname;
-    public int piaoshu;
+    private String uname;
+    private int piaoshu;
 
     public supervisor() {
     }

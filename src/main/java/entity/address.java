@@ -4,9 +4,9 @@ package entity;
  */
 
 public class address {
-    public String macaddress;
-    public String ipaddress;
-    public String cname;
+    private String macaddress;
+    private String ipaddress;
+    private String cname;
 
     public address() {
     }

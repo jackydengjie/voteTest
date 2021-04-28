@@ -1,13 +1,42 @@
 package entity;
 
 public class Toupiao {
+    private  String supervisor1;
+    private  String supervisor2;
+    private  String supervisor3;
     private String employees1;
     private String employees2;
     private String employees3;
     private String professional1;
     private String professional2;
     private String professional3;
-    private team team;
+    private String professional4;
+    private String professional5;
+    private String professional6;
+
+    public String getSupervisor1() {
+        return supervisor1;
+    }
+
+    public void setSupervisor1(String supervisor1) {
+        this.supervisor1 = supervisor1;
+    }
+
+    public String getSupervisor2() {
+        return supervisor2;
+    }
+
+    public void setSupervisor2(String supervisor2) {
+        this.supervisor2 = supervisor2;
+    }
+
+    public String getSupervisor3() {
+        return supervisor3;
+    }
+
+    public void setSupervisor3(String supervisor3) {
+        this.supervisor3 = supervisor3;
+    }
 
     public String getEmployees1() {
         return employees1;
@@ -57,24 +86,45 @@ public class Toupiao {
         this.professional3 = professional3;
     }
 
-    public entity.team getTeam() {
-        return team;
+    public String getProfessional4() {
+        return professional4;
     }
 
-    public void setTeam(entity.team team) {
-        this.team = team;
+    public void setProfessional4(String professional4) {
+        this.professional4 = professional4;
+    }
+
+    public String getProfessional5() {
+        return professional5;
+    }
+
+    public void setProfessional5(String professional5) {
+        this.professional5 = professional5;
+    }
+
+    public String getProfessional6() {
+        return professional6;
+    }
+
+    public void setProfessional6(String professional6) {
+        this.professional6 = professional6;
     }
 
     @Override
     public String toString() {
         return "Toupiao{" +
-                "employees1='" + employees1 + '\'' +
+                "supervisor1='" + supervisor1 + '\'' +
+                ", supervisor2='" + supervisor2 + '\'' +
+                ", supervisor3='" + supervisor3 + '\'' +
+                ", employees1='" + employees1 + '\'' +
                 ", employees2='" + employees2 + '\'' +
                 ", employees3='" + employees3 + '\'' +
                 ", professional1='" + professional1 + '\'' +
                 ", professional2='" + professional2 + '\'' +
                 ", professional3='" + professional3 + '\'' +
-                ", team=" + team +
+                ", professional4='" + professional4 + '\'' +
+                ", professional5='" + professional5 + '\'' +
+                ", professional6='" + professional6 + '\'' +
                 '}';
     }
 }

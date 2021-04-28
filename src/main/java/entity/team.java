@@ -6,18 +6,18 @@ package entity;
 import org.omg.CORBA.PUBLIC_MEMBER;
 
 public class team {
-    public int  FinancialAffairs;
-    public int  AHR;
-    public int  SALES1;
-    public int  SALES2;
-    public int  SALES6;
-    public int  SALES7;
-    public int  PM1;
-    public int  PM2;
-    public int  ProductMarketing;
-    public int  shipping;
-    public int  QC;
-    public int  NingboBranch;
+    private int  FinancialAffairs;
+    private int  AHR;
+    private int  SALES1;
+    private int  SALES2;
+    private int  SALES6;
+    private int  SALES7;
+    private int  PM1;
+    private int  PM2;
+    private int  ProductMarketing;
+    private int  shipping;
+    private int  QC;
+    private int  NingboBranch;
 
     public team() {
     }

@@ -8,8 +8,8 @@ package entity;
 import java.io.Serializable;
   /*实现序列化接口*/
 public class employees implements Serializable {
-    public String uname;
-    public int piaoshu;
+      private String uname;
+      private int piaoshu;
 
     public employees() {
     }

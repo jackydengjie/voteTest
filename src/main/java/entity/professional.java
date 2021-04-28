@@ -4,8 +4,8 @@ package entity;
  */
 
 public class professional {
-    public String uname;
-    public int piaoshu;
+    private String uname;
+    private int piaoshu;
 
     public professional() {
     }

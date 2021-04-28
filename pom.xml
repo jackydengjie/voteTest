@@ -162,7 +162,7 @@
   </dependencies>
 
   <build>
-    <finalName>ssmTest</finalName>
+    <finalName>voteTest</finalName> <!--此处名字为打包war包后的名字 -->
 
 
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->

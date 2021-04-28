@@ -19,19 +19,18 @@ public class ToupiaoController {
     @Resource
     private ToupiaoService toupiaoService;
 
-    @RequestMapping(path = "/getUser",method = RequestMethod.POST)
-    @ResponseBody
+    @RequestMapping(value="/toSavePs",method = RequestMethod.POST)
     public String savePs(Toupiao toupiao, HttpServletRequest request){
         System.out.println("savePs方法开始执行！！！！");
         System.out.println(toupiao);
-        String[] shuigou=request.getParameterValues("type");
-        System.out.println(shuigou);
-        for (int i = 0; i < shuigou.length; i++) {
-            String shuiguoname=shuigou[i];
-            System.out.println(shuiguoname);
-        }
 
-        return toupiaoService.savePs(toupiao);
+        String[] jiegou=request.getParameterValues("type");//读取前台checkbox选中的选项用字符数组读取
+        System.out.println(jiegou);
+        toupiaoService.savePs(toupiao,jiegou);
+
+        /*return toupiaoService.savePs(toupiao,jiegou);*/
+        return "toSavePs";
     }
+
 
 }

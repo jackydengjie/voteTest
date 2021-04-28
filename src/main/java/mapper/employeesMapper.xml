@@ -2,8 +2,18 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.employeesMapper">
 
+    <!--新增投票人-->
     <insert id="savePs" parameterType="String">
         insert into employees(employees) values (#{employees})
-
     </insert>
+
+    <!--查找是否已有投票人名-->
+    <select id="renmin" resultType="entity.supervisor">
+		SELECT * FROM supervisor WHERE uname=#{uname}
+	</select>
+
+    <!--更新票数-->
+    <update id="uppiaosu" parameterType="entity.Toupiao">
+    UPDATE supervisor SET piaoshu=#{ps} WHERE uname=#{uname}
+    </update>
 </mapper>
