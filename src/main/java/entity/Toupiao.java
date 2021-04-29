@@ -1,17 +1,32 @@
 package entity;
 
+
+import javax.validation.constraints.NotNull;
+
 public class Toupiao {
+    @NotNull
     private  String supervisor1;
+    @NotNull
     private  String supervisor2;
+    @NotNull
     private  String supervisor3;
+    @NotNull
     private String employees1;
+    @NotNull
     private String employees2;
+    @NotNull
     private String employees3;
+    @NotNull
     private String professional1;
+    @NotNull
     private String professional2;
+    @NotNull
     private String professional3;
+    @NotNull
     private String professional4;
+    @NotNull
     private String professional5;
+    @NotNull
     private String professional6;
 
     public String getSupervisor1() {

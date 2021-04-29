@@ -63,14 +63,14 @@
 
     <form action="${pageContext.request.contextPath}/toSavePs" method="post">
         <div class="question-title">Q1：优秀主管（1人三票，请统一填英文名）</div>
-        <input type="hidden" name="action" value="register">
+        <%--<input type="hidden" name="action" value="register">--%>
         <table style="margin-top: 25px;">
             <tr>
                 <td class="td_left">
                     <label> （1）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text"  name="supervisor1" class="form-control" placeholder="请输入优秀主管英文名" >
+                    <input type="text"  name="supervisor1" class="form-control" placeholder="" >
                 </td>
             </tr>
             <tr>
@@ -78,7 +78,7 @@
                     <label > （2）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text"  name="supervisor2" class="form-control" placeholder="请输入优秀主管英文名" >
+                    <input type="text"  name="supervisor2" class="form-control" placeholder="" >
                 </td>
             </tr>
             <tr>
@@ -86,7 +86,7 @@
                     <label > （3）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text"  name="supervisor3" class="form-control" placeholder="请输入优秀主管英文名" >
+                    <input type="text"  name="supervisor3" class="form-control" placeholder="" >
                 </td>
             </tr>
         </table>
@@ -94,14 +94,14 @@
 
 
         <div class="question-title">Q2：优秀员工（1人三票，请统一填英文名）</div>
-        <input type="hidden" name="action" value="register">
+        <%--<input type="hidden" name="action" value="register">--%>
         <table style="margin-top: 25px;">
             <tr>
                 <td class="td_left">
                     <label > （1）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text"  name="employees1" class="form-control" placeholder="请输入优秀员工英文名" >
+                    <input type="text"  name="employees1" class="form-control" placeholder="" >
                 </td>
             </tr>
             <tr>
@@ -109,7 +109,7 @@
                     <label > （2）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text"  name="employees2" class="form-control" placeholder="请输入优秀员工英文名" >
+                    <input type="text"  name="employees2" class="form-control" placeholder="" >
                 </td>
             </tr>
             <tr>
@@ -117,7 +117,7 @@
                     <label > （3）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text" id="supervisor3" name="employees3" class="form-control" placeholder="请输入优秀员工英文名" >
+                    <input type="text" id="supervisor3" name="employees3" class="form-control" placeholder="" >
                 </td>
             </tr>
         </table>
@@ -125,14 +125,14 @@
 
 
         <div class="question-title">Q3：敬业之星（1人六票，请统一填英文名）</div>
-        <input type="hidden" name="action" value="register">
+        <%--<input type="hidden" name="action" value="register">--%>
         <table style="margin-top: 25px;">
             <tr>
                 <td class="td_left">
                     <label > （1）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text"  name="professional1" class="form-control" placeholder="请输入敬业之星英文名" >
+                    <input type="text"  name="professional1" class="form-control" placeholder="" >
                 </td>
             </tr>
             <tr>
@@ -140,7 +140,7 @@
                     <label > （2）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text"  name="professional2" class="form-control" placeholder="请输入敬业之星英文名" >
+                    <input type="text"  name="professional2" class="form-control" placeholder="" >
                 </td>
             </tr>
             <tr>
@@ -148,7 +148,7 @@
                     <label > （3）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text"  name="professional3" class="form-control" placeholder="请输入敬业之星英文名" >
+                    <input type="text"  name="professional3" class="form-control" placeholder="" >
                 </td>
             </tr>
             <tr>
@@ -156,7 +156,7 @@
                     <label > （4）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text"  name="professional4" class="form-control" placeholder="请输入敬业之星英文名" >
+                    <input type="text"  name="professional4" class="form-control" placeholder="" >
                 </td>
             </tr>
             <tr>
@@ -164,7 +164,7 @@
                     <label > （5）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text"  name="professional5" class="form-control" placeholder="请输入敬业之星英文名" >
+                    <input type="text"  name="professional5" class="form-control" placeholder="" >
                 </td>
             </tr>
             <tr>
@@ -172,7 +172,7 @@
                     <label > （6）</label>
                 </td>
                 <td class="td_right">
-                    <input type="text"  name="professional6" class="form-control" placeholder="请输入敬业之星英文名" >
+                    <input type="text"  name="professional6" class="form-control" placeholder="" >
                 </td>
             </tr>
         </table>
