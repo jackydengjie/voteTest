@@ -8,8 +8,8 @@ public class Toupiao {
     private  String supervisor1;
     @NotNull
     private  String supervisor2;
-    @NotNull
-    private  String supervisor3;
+    @NotNull(message = "不能为空")
+    private   String supervisor3;
     @NotNull
     private String employees1;
     @NotNull

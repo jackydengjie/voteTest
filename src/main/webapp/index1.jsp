@@ -4,7 +4,7 @@
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@page import="util.*" %>> <%--导入util包下的所有java文件--%>
+<%@page import="util.*" %> <%--导入util包下的所有java文件--%>
 <%@page import="java.net.*" %>
 <%@page import="java.lang.*" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">

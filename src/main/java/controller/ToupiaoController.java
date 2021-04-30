@@ -4,12 +4,14 @@ import entity.Toupiao;
 
 import org.springframework.stereotype.Controller;
 
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import service.ToupiaoService;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+
 import java.util.Enumeration;
 
 @Controller
@@ -19,7 +21,7 @@ public class ToupiaoController {
     private ToupiaoService toupiaoService;
 
     @RequestMapping(value="/toSavePs",method = RequestMethod.POST)
-    public String savePs(@Valid Toupiao toupiao, HttpServletRequest request){
+    public String savePs(Toupiao toupiao, HttpServletRequest request){
         System.out.println("savePs方法开始执行！！！！");
         System.out.println(request);
 
